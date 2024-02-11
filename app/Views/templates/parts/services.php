@@ -8,7 +8,7 @@
             <?php foreach ($services as $service) : ?>
                 <div class="col-md-6 mt-4">
                     <div class="icon-box">
-                        <i class="bi <?= $service['logo']; ?>"></i>
+                        <i class="<?= $service['logo']; ?>"></i>
                         <h4><a href="#"><?= $service['name']; ?></a></h4>
                         <p>Deskripsi</p>
                     </div>

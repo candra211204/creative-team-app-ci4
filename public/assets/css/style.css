@@ -689,7 +689,7 @@ section {
   float: left;
   color: #3498db;
   font-size: 40px;
-  line-height: 0;
+  line-height: 1;
 }
 
 .services .icon-box h4 {

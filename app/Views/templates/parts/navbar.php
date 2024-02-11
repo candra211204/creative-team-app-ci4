@@ -2,22 +2,25 @@
     <div class="container d-flex align-items-center">
         <div class="logo me-auto">
             <h1>
-                <a href="index.html">Creative Team</a>
+                <a href="<?= $navbar['title_link'] ?>"><?= $navbar['title'] ?></a>
             </h1>
         </div>
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">Jasa</a></li>
-                <li><a class="nav-link scrollto" href="#services">Portofolio</a></li>
-                <li><a class="nav-link scrollto " href="#portfolio">Kontak</a></li>
+                <?php foreach ($navbar['menu'] as $menu) : ?>
+                    <li>
+                        <a class="nav-link scrollto" href="<?= $menu['link'] ?>"><?= $menu['name'] ?></a>
+                    </li>
+                <?php endforeach; ?>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <div class="header-social-links d-flex align-items-center">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <?php foreach ($navbar['social_media'] as $socialMedia) : ?>
+                <a href="<?= $socialMedia['link'] ?>">
+                    <i class="<?= $socialMedia['logo'] ?>"></i>
+                </a>
+            <?php endforeach; ?>
         </div>
     </div>
 </header>

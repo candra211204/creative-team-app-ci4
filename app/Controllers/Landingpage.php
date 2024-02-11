@@ -6,21 +6,22 @@ use App\Models\Services;
 
 class Landingpage extends BaseController
 {
-    protected $datas;
+    protected $services;
 
     public function __construct()
     {
-        $this->datas = new Services();
-        $this->datas = $this->datas->getService();
+        $this->services = new Services();
+        $this->services = $this->services->getService();
     }
 
     public function index()
     {
-        $datas = [
+        $data = [
             'title' => 'Landingpage',
-            'services' => $this->datas
+            'navbar' => $this->navbar,
+            'services' => $this->services
         ];
 
-        return view('landingpage', $datas);
+        return view('landingpage', $data);
     }
 }
