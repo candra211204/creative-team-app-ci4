@@ -56,6 +56,9 @@ abstract class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
     }
 
+    // Session
+
+
     // Default data
     protected $navbar = [
         'title' => 'Creative Team',
@@ -94,28 +97,9 @@ abstract class BaseController extends Controller
         ]
     ];
 
-    protected $dashboardNavbar = [
-        'title' => 'Creative Team Dashboard',
-        'title_link' => '/admin/dashboard',
-        'menu' => [
-            [
-                'name' => 'Dashboard',
-                'link' => '/admin/dashboard'
-            ]
-        ],
-        'social_media' => [
-            [
-                'logo' => 'bx bxl-twitter',
-                'link' => '#'
-            ],
-            [
-                'logo' => 'bx bxl-facebook-circle',
-                'link' => '#'
-            ],
-            [
-                'logo' => 'bx bxl-instagram',
-                'link' => '#'
-            ]
-        ]
+    // Error only
+    protected $dataError = [
+        'title' => 'Error',
+        'link' => '/admin/dashboard'
     ];
 }

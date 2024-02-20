@@ -20,6 +20,11 @@ class Services extends Migration
                 'constraint' => '100',
                 'unique'     => true,
             ],
+            'slug' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '100',
+                'unique'     => true,
+            ],
             'description' => [
                 'type' => 'TEXT',
                 'null' => true,

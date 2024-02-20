@@ -15,6 +15,7 @@ class ServicesSeeder extends Seeder
         $data = [
             [
                 'name' => 'Aplikasi',
+                'slug' => 'aplikasi',
                 'description' => 'Tersedia jasa pembuatan Website, Mobile Apps, dan Desktop Apps',
                 'status' => 'Ready',
                 'logo' => 'bx bx-desktop',
@@ -23,6 +24,7 @@ class ServicesSeeder extends Seeder
             ],
             [
                 'name' => 'Desain Grafis',
+                'slug' => 'desain-grafis',
                 'description' => 'Tersedia jasa pembuatan Poster, Thumbnail Youtube, Logo, Banner',
                 'status' => 'Ready',
                 'logo' => 'bx bx-palette',
